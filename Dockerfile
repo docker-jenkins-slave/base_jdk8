@@ -25,7 +25,7 @@ RUN apt-get update && \
 # requires Java 8. On Ubuntu, use OpenJDK.
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
-    sudo apt-get install openjdk-8-jdk
+    apt-get install -y openjdk-8-jdk && \
     rm -rf /var/lib/apt/lists/*
 
 # Standard SSH port
